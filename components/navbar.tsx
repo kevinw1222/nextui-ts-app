@@ -28,7 +28,7 @@ import {
 } from "@/components/icons";
 
 import { AuthProvider } from "@/config/authContext";
-import { UserComponent } from "./user";
+import { UserComponent } from "./User";
 
 export const Navbar = () => {
 	const searchInput = (
@@ -53,7 +53,7 @@ export const Navbar = () => {
 	);
 
 	return (
-		<NextUINavbar maxWidth="xl" position="sticky">
+		<NextUINavbar maxWidth="full" position="sticky">
 			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
 				<NavbarBrand as="li" className="gap-3 max-w-fit">
 					<NextLink className="flex justify-start items-center gap-1" href="/">
