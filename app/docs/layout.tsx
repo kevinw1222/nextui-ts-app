@@ -26,7 +26,7 @@ export default function DocsLayout({ children }: { children: React.ReactNode }) 
 		<AuthProvider>
 			{user ? (
 				<section className="flex flex-col items-center justify-center">
-					<div className="inline-block max-w-full text-center justify-center">{children}</div>
+					<div className="inline-block max-w-sceen text-center justify-center">{children}</div>
 				</section>
 			) : (
 				<div className="flex justify-center">

@@ -9,6 +9,7 @@ import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
 import { Divider } from "@nextui-org/react";
+import { FirebaseIcon, GoogleIcon, NextJSIcon, VercelIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
 	title: {
@@ -63,26 +64,62 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 										Kevin Wong
 									</a>
 								</p>
-							</div>
-
-							<div className="flex-1 text-center">
-								<Link
-									isExternal
-									className="flex items-center justify-center gap-1 text-current"
-									href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
-									title="nextui.org homepage">
-									<span className="text-default-600">Powered by</span>
-									<p className="text-primary">NextUI</p>
-								</Link>
-							</div>
-
-							<div className="flex-1 text-right pr-5">
 								<a
 									className="text-xs text-balck hover:text-primary hover:underline"
 									title="Send me an email"
 									href="mailto:kevinwong1249@gmail.com">
 									Contact me
 								</a>
+							</div>
+
+							<div className="flex-1 text-center">
+								{/* <Link
+									isExternal
+									className="flex items-center justify-center gap-1 text-current"
+									href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"
+									title="nextui.org homepage">
+									<span className="text-default-600">Powered by</span>
+									<p className="text-primary">NextUI</p>
+								</Link> */}
+								<p className="text-xs">Powered by:</p>
+								<Link className="pr-2" isExternal href="https://nextjs.org" title="Next.JS">
+									<NextJSIcon />
+								</Link>
+								<Link
+									className="pr-2"
+									isExternal
+									href="https://vercel.com/?utm_source=nextui&utm_marketing=oss"
+									title="Vercel">
+									<VercelIcon />
+								</Link>
+								<Link
+									className="pr-2"
+									isExternal
+									href="https://firebase.google.com"
+									title="Firebase">
+									<FirebaseIcon />
+								</Link>
+							</div>
+
+							<div className="flex-1 text-right pr-5">
+								{/* <p className="text-xs">Powered by:</p>
+								<Link className="pr-2" isExternal href="https://nextjs.org" title="Next.JS">
+									<NextJSIcon />
+								</Link>
+								<Link
+									className="pr-2"
+									isExternal
+									href="https://vercel.com/?utm_source=nextui&utm_marketing=oss"
+									title="Vercel">
+									<VercelIcon />
+								</Link>
+								<Link
+									className="pr-2"
+									isExternal
+									href="https://firebase.google.com"
+									title="Firebase">
+									<FirebaseIcon />
+								</Link> */}
 							</div>
 						</footer>
 					</div>

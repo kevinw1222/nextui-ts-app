@@ -28,7 +28,7 @@ import {
 } from "@/components/icons";
 
 import { AuthProvider } from "@/config/authContext";
-import { UserComponent } from "./User";
+import { UserComponent } from "./user";
 
 export const Navbar = () => {
 	const searchInput = (
