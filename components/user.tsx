@@ -55,7 +55,7 @@ export const UserComponent: React.FC = () => {
 					) : (
 						<>
 							<p className="text-xl font-bold">Welcome, {user.displayName}</p>
-							<p>{user.email}</p>
+							<p>Your ID: {user.email}</p>
 							<Spacer y={5} />
 							<Button color="danger" size="sm" radius="sm" variant="flat" onPress={userSignOut}>
 								Sign-out

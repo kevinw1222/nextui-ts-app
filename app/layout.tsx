@@ -9,7 +9,7 @@ import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
 import { Divider } from "@nextui-org/react";
-import { FirebaseIcon, GoogleIcon, NextJSIcon, VercelIcon } from "@/components/icons";
+import { FirebaseIcon, GoogleIcon, NextJSIcon, NextUIIcon, VercelIcon } from "@/components/icons";
 
 export const metadata: Metadata = {
 	title: {
@@ -81,19 +81,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 									<span className="text-default-600">Powered by</span>
 									<p className="text-primary">NextUI</p>
 								</Link> */}
-								<p className="text-xs">Powered by:</p>
-								<Link className="pr-2" isExternal href="https://nextjs.org" title="Next.JS">
-									<NextJSIcon />
-								</Link>
+								<p className="text-xs">Powered by</p>
+
 								<Link
-									className="pr-2"
+									className="px-1"
 									isExternal
 									href="https://vercel.com/?utm_source=nextui&utm_marketing=oss"
 									title="Vercel">
 									<VercelIcon />
 								</Link>
+								<Link className="px-1" isExternal href="https://nextui.org" title="NextUI">
+									<NextUIIcon />
+								</Link>
 								<Link
-									className="pr-2"
+									className="px-1"
 									isExternal
 									href="https://firebase.google.com"
 									title="Firebase">

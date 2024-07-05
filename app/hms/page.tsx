@@ -1,4 +1,4 @@
-import { CheckInForm } from "@/components/checkinForm";
+import { HMS } from "@/components/HMS";
 import { title } from "@/components/primitives";
 
 export default function HMSPage() {
@@ -6,7 +6,7 @@ export default function HMSPage() {
 		<div>
 			{/* <h1 className={title()}>Blog</h1> */}
 			<h1 className="pl-8 font-bold text-xl text-left">Hotel Management System</h1>
-			<CheckInForm />
+			<HMS />
 		</div>
 	);
 }

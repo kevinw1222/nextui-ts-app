@@ -70,19 +70,6 @@ export const GoogleIcon: React.FC<IconSvgProps> = ({ size = 22, width, height, .
 	);
 };
 
-export const VercelIcon: React.FC<IconSvgProps> = ({ size = 20, width, height, ...props }) => {
-	return (
-		<svg
-			height={size || height}
-			width={size || width}
-			{...props}
-			viewBox="0 0 76 65"
-			xmlns="http://www.w3.org/2000/svg">
-			<path d="M37.5274 0L75.0548 65H0L37.5274 0Z" fill="#000000" />
-		</svg>
-	);
-};
-
 export const NextJSIcon: React.FC<IconSvgProps> = ({ size = 20, width, height, ...props }) => {
 	return (
 		<svg
@@ -101,6 +88,23 @@ export const NextJSIcon: React.FC<IconSvgProps> = ({ size = 20, width, height, .
 			/>
 		</svg>
 	);
+};
+
+export const VercelIcon: React.FC<IconSvgProps> = ({ size = 20, width, height, ...props }) => {
+	return (
+		<svg
+			height={size || height}
+			width={size || width}
+			{...props}
+			viewBox="0 0 76 65"
+			xmlns="http://www.w3.org/2000/svg">
+			<path d="M37.5274 0L75.0548 65H0L37.5274 0Z" fill="#000000" />
+		</svg>
+	);
+};
+
+export const NextUIIcon: React.FC<IconSvgProps> = ({ size = 20, width, height }) => {
+	return <img src={"nextui-icon.png"} width={size || width} height={size || height}></img>;
 };
 
 export const FirebaseIcon: React.FC<IconSvgProps> = ({ size = 20, width, height, ...props }) => {
